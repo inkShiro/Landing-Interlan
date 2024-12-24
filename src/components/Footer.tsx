@@ -120,7 +120,7 @@ const Footer: FC = () => {
             </button>
           </Link>
           <p className="text-white text-xs mb-4 text-center">Mantente siempre conectado</p>
-          <div className={`flex  ${isMobile ? 'gap-4 scale-[1.6]' : 'gap-2'
+          <div className={`flex  ${isMobile ? 'gap-4 scale-[1.5]' : 'gap-2'
             } py-2 justify-center`}>
             <Link href={links.facebook}>
               <button className="h-8 w-8 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
@@ -172,24 +172,24 @@ const Footer: FC = () => {
             onClick={() => setShowContact(!showContact)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-5xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
               Contacto</h3>
           </button>
           {showContact && (
             <>
-              <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Dirección fiscal</p>
-              <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Central</p>
-              <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Av. Colocar dirección</p>
-              <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Nro. 000 - 0000</p>
+              <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Dirección fiscal</p>
+              <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Central</p>
+              <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Av. Colocar dirección</p>
+              <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Nro. 000 - 0000</p>
               <div className="mt-4">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Central</p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>(01) 0000 000</p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Central</p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>(01) 0000 000</p>
               </div>
               <div className="mt-4">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}>Email</p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.mail}>cvemo@interlanperu.com</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.info}>info@interlan.pe</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.Itl}>http://Itl.com.pe</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}>Email</p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.mail}>cvemo@interlanperu.com</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.info}>info@interlan.pe</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.Itl}>http://Itl.com.pe</Link></p>
               </div>
             </>
           )}
@@ -199,22 +199,22 @@ const Footer: FC = () => {
             onClick={() => setShowUserInfo(!showUserInfo)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-5xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
               Información de abonados y usuarios
             </h3>
           </button>
           {showUserInfo && (
             <>
               <div className="space-y-2">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.reclaims}>¿Cómo reclamar?</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.use_conditions}>Condiciones de uso</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.reclaims_directive}>Directiva de reclamos</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.Payment_methods}>Medios de pago</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.reclaims}>¿Cómo reclamar?</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.use_conditions}>Condiciones de uso</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.reclaims_directive}>Directiva de reclamos</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.Payment_methods}>Medios de pago</Link></p>
               </div>
               <div className="mt-4 space-y-2">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.Website_Terms_of_Use}>Condiciones de uso del sitio web</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.Internet_use_policy}>Política de uso de internet</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.Cookies_policy}>Política de cookies</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.Website_Terms_of_Use}>Condiciones de uso del sitio web</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.Internet_use_policy}>Política de uso de internet</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.Cookies_policy}>Política de cookies</Link></p>
               </div>
             </>
           )}
@@ -225,19 +225,19 @@ const Footer: FC = () => {
             onClick={() => setShowRights(!showRights)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-5xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
               Tus derechos
             </h3>
           </button>
           {showRights && (
             <>
               <div className="space-y-2">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.rights}>Entérate de tus derechos</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.neutrality_regulation}>Reglamento de neutralidad</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.social_media_privacy_policy}>Política de privacidad en redes sociales</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.website_privacy_policy}>Política de privacidad del sitio web</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.return_interruption}>Devolución por interrupciones</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.institutional}>Institucional</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.rights}>Entérate de tus derechos</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.neutrality_regulation}>Reglamento de neutralidad</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.social_media_privacy_policy}>Política de privacidad en redes sociales</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.website_privacy_policy}>Política de privacidad del sitio web</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.return_interruption}>Devolución por interrupciones</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.institutional}>Institucional</Link></p>
               </div>
             </>
           )}
@@ -248,25 +248,25 @@ const Footer: FC = () => {
             onClick={() => setShowUtility(!showUtility)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-5xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
               De utilidad
             </h3>
           </button>
           {showUtility && (
             <>
               <div className="space-y-2">
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.buy_plan}>Compra tu plan</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.we}>Nosotros</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.blog}>Blog</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.faq}>Preguntas frecuentes</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.my_portal}>Mi portal</Link></p>
-                <p className={`${isMobile ? 'text-4xl py-4' : 'text-xs'}`}><Link href={links.promotions}>Promociones</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.buy_plan}>Compra tu plan</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.we}>Nosotros</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.blog}>Blog</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.faq}>Preguntas frecuentes</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.my_portal}>Mi portal</Link></p>
+                <p className={`${isMobile ? 'text-2xl py-4' : 'text-xs'}`}><Link href={links.promotions}>Promociones</Link></p>
               </div>
             </>
           )}
         </div>
       </div>
-      <div className="bg-[#1A1A1A] text-center text-sm text-white h-[4vh] content-center w-full">
+      <div className="bg-[#1A1A1A] text-center text-xs text-white h-[4vh] content-center w-full">
         <span className="font-bold">© 2024 INTERLAN </span>
         <span> / Todos los Derechos Reservados / Diseñado por Stdio X</span>
       </div>

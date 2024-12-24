@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
-    <>
+    <section style={{ backgroundColor: "#EFF6FF" }}>
       <Navbar />
       <HeroBanner />
       <TargetAudience />
@@ -27,6 +27,6 @@ export default function Page() {
       <RedesSociales />
       <TerminosYCondiciones />
       <Footer />
-    </>
+    </section>
   );
 }

@@ -16,9 +16,8 @@ const RedesSociales: FC = () => {
   return (
     <section className="bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
       <span className="text-center text-black text-3xl font-bold pb-4">REDES SOCIALES</span>
-      <div className={`flex  ${
-          isMobile ? 'gap-4 scale-[1.7]' : 'gap-2'
-        } py-2 justify-center`}>
+      <div className={`flex  ${isMobile ? 'gap-4 scale-[1.3]' : 'gap-2'
+            } py-2 justify-center`}>
         <Link href={links.facebook}>
           <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
             <FaFacebookF className="text-blue-600" />

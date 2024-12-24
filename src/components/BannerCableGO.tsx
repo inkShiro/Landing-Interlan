@@ -107,8 +107,8 @@ const BannerCableGO = () => {
         </Link>
         <div
           className={`absolute  ${isMobile
-            ? 'top-[4%] left-[3%] h-[60vh] w-[80vw] flex flex-col'
-            : 'top-[-38%] left-[2vw] h-[40vh] w-[40vw] translate-y-1/2'
+            ? 'top-[4%] left-[2%] h-[60vh] w-[80vw] flex flex-col scale-[75%]'
+            : 'top-[-38%] left-[2vw] h-[40vh] w-[40vw] translate-y-1/2 '
             } transform m-2 flex flex-col justify-center`}
         >
           <div
@@ -136,10 +136,10 @@ const BannerCableGO = () => {
                   width: isMobile ? '20vw' : '12vw',
                   height: 'auto',
                 }}
-                className="rounded-md hover:scale-[1.01] transition-all"
+                className={`rounded-md transition-all ${isMobile ? "scale-[2.4] -translate-y-6 hover:scale-[2.41]" : "hover:scale-[1.01]" }`}
               />
               <div
-                className={`flex ${isMobile ? 'flex-col items-center space-y-2' : 'flex-nowrap items-center'
+                className={`flex ${isMobile ? 'flex-col items-center space-y-2 '  : 'flex-nowrap items-center'
                   }`}
               >
                 {!isMobile && (
@@ -153,7 +153,7 @@ const BannerCableGO = () => {
                 }`}
             >
               <span
-                className={`py-1 border-b-2 border-white text-white ${isMobile ? 'pl-8 pr-8 text-xs' : 'text-sm pl-2 pr-8'
+                className={`py-1 border-b-2 border-white text-white ${isMobile ? 'pl-8 pr-8 text-xs text-center' : 'text-sm pl-2 pr-8'
                   }`}
               >
                 Adquiérelo con algunos de nuestros planes

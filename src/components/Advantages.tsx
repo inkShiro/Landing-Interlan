@@ -101,7 +101,7 @@ const Advantages = () => {
               </div>
             </div>
           ) : (
-            <div className="flex items-center justify-center h-screen ">
+            <div className="flex items-center justify-center h-screen scale-[0.70] ">
               <div className="grid grid-rows-6 gap-4 md:hidden">
                 <div className="flex items-center justify-start p-4 w-[480px] h-[100px] rounded-lg bg-gray-200">
                   <span className="text-2xl text-blue-800 font-extrabold w-[100px]">01 /</span>

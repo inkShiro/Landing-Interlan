@@ -101,7 +101,7 @@ const HeroBanner = () => {
   return (
     <section
       id="hero-banner"
-      className={`relative overflow-hidden ${isMobile ? "h-[700px]" : "h-[800px]"}`}
+      className={`relative overflow-hidden ${isMobile ? "h-[600px]" : "h-[800px]"}`}
       style={{ backgroundColor: "#EFF6FF" }}
     >
       <div
@@ -135,8 +135,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible
-                ? "translateY(8vh) scaleY(1.55) scaleX(-1.55)" 
-                : "translateY(10vh) scaleY(1.5) scaleX(-1.5)"
+                ? "translateY(8vh) scaleY(1.75) scaleX(-1.75)" 
+                : "translateY(10vh) scaleY(1.7) scaleX(-1.7)"
                 : isVisible
                 ? "translateY(8vh) scaleY(1.15) scaleX(-1.15)" 
                 : "translateY(10vh) scaleY(1.1) scaleX(-1.1)",
@@ -154,8 +154,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible
-                  ? "translateY(-30vh) translateX(-18vw) scaleY(0.65) scaleX(0.65)"
-                  : "translateY(-30vh) translateX(-18vw) scaleY(0.6) scaleX(0.6)"
+                  ? "translateY(-30vh) translateX(-18vw) scaleY(0.75) scaleX(0.75)"
+                  : "translateY(-30vh) translateX(-18vw) scaleY(0.7) scaleX(0.7)"
                 : isVisible
                   ? "translateY(-10vh) translateX(26vw) scaleY(0.35) scaleX(0.35)"
                   : "translateY(-10vh) translateX(26vw) scaleY(0.3) scaleX(0.3)",
@@ -173,8 +173,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible 
-                  ? "translateY(20vh) translateX(0vw) scaleY(0.85) scaleX(0.85)" 
-                  : "translateY(20vh) translateX(0vw) scaleY(0.8) scaleX(0.8)"
+                  ? "translateY(20vh) translateX(0vw) scaleY(0.95) scaleX(0.95)" 
+                  : "translateY(20vh) translateX(0vw) scaleY(0.9) scaleX(0.9)"
                 : isVisible
                   ? "translateY(14vh) translateX(-18vw) scaleY(0.45) scaleX(0.45)" 
                   : "translateY(14vh) translateX(-18vw) scaleY(0.4) scaleX(0.4)",
@@ -196,8 +196,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible
-                ? "translateY(14vh) scaleY(1.55) scaleX(-1.55)" 
-                : "translateY(16vh) scaleY(1.5) scaleX(-1.5)"
+                ? "translateY(14vh) scaleY(1.75) scaleX(-1.75)" 
+                : "translateY(16vh) scaleY(1.7) scaleX(-1.7)"
                 : isVisible
                 ? "translateY(8vh) scaleY(1.15) scaleX(-1.15)" 
                 : "translateY(10vh) scaleY(1.1) scaleX(-1.1)",
@@ -215,8 +215,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible 
-                  ? "translateY(20vh) translateX(24vw) scaleY(0.65) scaleX(0.65)" 
-                  : "translateY(20vh) translateX(24vw) scaleY(0.6) scaleX(0.6)"
+                  ? "translateY(20vh) translateX(24vw) scaleY(0.85) scaleX(0.85)" 
+                  : "translateY(20vh) translateX(24vw) scaleY(0.8) scaleX(0.8)"
                 : isVisible 
                   ? "translateY(-24vh) translateX(24vw) scaleY(0.35) scaleX(0.35)" 
                   : "translateY(-24vh) translateX(24vw) scaleY(0.3) scaleX(0.3)",
@@ -234,8 +234,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible 
-                  ? "translateY(-26vh) translateX(16vw) scaleY(0.65) scaleX(0.65)" 
-                  : "translateY(-26vh) translateX(16vw) scaleY(0.6) scaleX(0.6)"
+                  ? "translateY(-26vh) translateX(16vw) scaleY(0.85) scaleX(0.85)" 
+                  : "translateY(-26vh) translateX(16vw) scaleY(0.8) scaleX(0.8)"
                 : isVisible 
                   ? "translateY(14vh) translateX(-24vw) scaleY(0.35) scaleX(0.35)" 
                   : "translateY(14vh) translateX(-24vw) scaleY(0.3) scaleX(0.3)",
@@ -257,8 +257,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible
-                ? "translateY(8vh) scaleY(1.55) scaleX(-1.55)" 
-                : "translateY(10vh) scaleY(1.5) scaleX(-1.5)"
+                ? "translateY(8vh) scaleY(1.85) scaleX(-1.85)" 
+                : "translateY(10vh) scaleY(1.8) scaleX(-1.8)"
                 : isVisible
                 ? "translateY(8vh) scaleY(1.15) scaleX(-1.15)" 
                 : "translateY(10vh) scaleY(1.1) scaleX(-1.1)",
@@ -276,8 +276,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible 
-                  ? "translateY(24vh) translateX(16vw) scaleY(0.85) scaleX(0.85)" 
-                  : "translateY(24vh) translateX(16vw) scaleY(0.8) scaleX(0.8)"
+                  ? "translateY(24vh) translateX(16vw) scaleY(0.95) scaleX(0.95)" 
+                  : "translateY(24vh) translateX(16vw) scaleY(0.9) scaleX(0.9)"
                 : isVisible 
                   ? "translateY(14vh) translateX(-24vw) scaleY(0.35) scaleX(0.35)" 
                   : "translateY(14vh) translateX(-24vw) scaleY(0.3) scaleX(0.3)",
@@ -295,8 +295,8 @@ const HeroBanner = () => {
                 objectFit: "contain",
                 transform: isMobile
                 ? isVisible 
-                  ? "translateY(-30vh) translateX(24vw) scaleY(0.65) scaleX(0.65)" 
-                  : "translateY(-30vh) translateX(24vw) scaleY(0.6) scaleX(0.6)"
+                  ? "translateY(-30vh) translateX(24vw) scaleY(0.85) scaleX(0.85)" 
+                  : "translateY(-30vh) translateX(24vw) scaleY(0.8) scaleX(0.8)"
                 : isVisible 
                   ? "translateY(-24vh) translateX(24vw) scaleY(0.35) scaleX(0.35)" 
                   : "translateY(-24vh) translateX(24vw) scaleY(0.3) scaleX(0.3)",

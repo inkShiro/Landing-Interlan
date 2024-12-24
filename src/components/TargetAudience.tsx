@@ -47,14 +47,14 @@ const TargetAudience = () => {
       <div className="max-w-7xl mx-auto text-center relative px-12">
         <button
           onClick={handlePrevious}
-          className="absolute top-4 left-[10%] transform -translate-y-1/2 bg-black text-white p-2 rounded-full"
+          className={`${isMobile ? "left-[6%]" : "left-[10%]"} absolute top-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full`}
         >
           <FaChevronLeft size={24} />
         </button>
         <h2 className="text-3xl font-bold mb-8 text-black">DIRIGIDO PARA</h2>
         <button
           onClick={handleNext}
-          className="absolute top-4 right-[10%] transform -translate-y-1/2 bg-black text-white p-2 rounded-full"
+          className={`${isMobile ? "right-[6%]" : "right-[10%]"} absolute top-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full`}
         >
           <FaChevronRight size={24} />
         </button>

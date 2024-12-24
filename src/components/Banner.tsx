@@ -61,10 +61,10 @@ const Banner = () => {
       alt: "Cuarta imagen de Hero Banner",
       transform: isVisible
         ? isMobile
-          ? "translateY(-22vh) translateX(16vw) scaleY(0.55) scaleX(0.55)"
+          ? "translateY(-18vh) translateX(16vw) scaleY(0.65) scaleX(0.65)"
           : "translateY(6vh) translateX(-24vw) scaleY(0.34) scaleX(0.34)"
         : isMobile
-          ? "translateY(-22vh) translateX(16vw) scaleY(0.5) scaleX(0.5)"
+          ? "translateY(-18vh) translateX(16vw) scaleY(0.6) scaleX(0.6)"
           : "translateY(6vh) translateX(-24vw) scaleY(0.3) scaleX(0.3)",
       sizes: isMobile
         ? "(max-width: 768px) 90vw"
