@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-[#150140] p-4 py-8 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-8 md:px-24">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-8 md:px-8 scale-90">
           <div className="flex mr-4 items-center">
             <button>
               <Link href={links.home} className="block">
@@ -37,7 +37,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="hidden md:flex space-x-8 items-center">
-            <ul className="flex space-x-8 text-white font-semibold text-lg flex-nowrap items-center">
+            <ul className="flex space-x-8 text-white text-sm flex-nowrap items-center">
               <li>
                 <Link href={links.home} className="hover:text-gray-400 transition-colors duration-300">
                   Inicio
@@ -61,25 +61,25 @@ const Navbar = () => {
             </ul>
             <div className="flex space-x-4 items-center">
               <Link href={links.facebook}>
-                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-300 hover:text-white transition-all duration-300">
-                  <FaFacebookF className="text-blue-600" />
+                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-300 hover:text-white transition-all duration-300">
+                  <FaFacebookF className="text-[#13092E]" />
                 </button>
               </Link>
               <Link href={links.youtube}>
-                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-red-300 hover:text-white transition-all duration-300">
-                  <FaYoutube className="text-red-600" />
+                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#0099FE] hover:bg-red-300 hover:text-white transition-all duration-300">
+                  <FaYoutube className="text-[#E9FBFB]" />
                 </button>
               </Link>
               <Link href={links.instagram}>
-                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-blue-200 hover:bg-pink-300 hover:text-white transition-all duration-300">
-                  <FaInstagram className="text-white" />
+                <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-pink-300 hover:text-white transition-all duration-300">
+                  <FaInstagram className="text-[#13092E]" />
                 </button>
               </Link>
               <button
                 onClick={toggleLogin}
-                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-all duration-300"
+                className="bg-blue-500 font-semibold text-xs text-white py-3 px-12 rounded-md hover:bg-blue-700 transition-all duration-300"
               >
-                Mi panel
+                MI PANEL
               </button>
             </div>
           </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               onClick={toggleLogin}
               className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition-all duration-300"
             >
-              Mi panel
+              MI PANEL
             </button>
             <button onClick={toggleMenu} className="text-white ml-4">
               <span className="text-4xl hover:text-gray-400 transition-colors duration-300">{isMenuOpen ? 'X' : '⋮'}</span>

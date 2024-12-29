@@ -35,7 +35,7 @@ const Footer: FC = () => {
   return (
     <footer className="bg-[rgb(21,1,64)] text-white overflow-hidden">
       <div className="bg-[#F2F0F0] p-4 justify-center py-8">
-        <div className={`w-[80vw] flex ${isMobile ? ' mx-auto flex-col items-center' : ' mx-auto flex-row flex-nowrap items-center'}`}>
+        <div className={`w-[80vw] flex ${isMobile ? ' mx-4 flex-row items-center' : ' mx-auto flex-row flex-nowrap items-center'}`}>
           <Link href={links.MTC}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
               <Image
@@ -52,7 +52,7 @@ const Footer: FC = () => {
                 className={`w-auto h-auto rounded-md transition-all${isMobile ? '' : ''}`}
               />
             </button>
-            {!isMobile && <span className="text-9xl text-gray-500 px-4">/</span>}
+            <span className="text-9xl text-gray-500 px-4">/</span>
           </Link>
           <Link href={links.osiptel}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
@@ -71,7 +71,7 @@ const Footer: FC = () => {
               />
             </button>
           </Link>
-          {!isMobile && <span className="text-9xl text-gray-500 px-4">/</span>}
+          <span className="text-9xl text-gray-500 px-4">/</span>
           <Link href={links.pronatel}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
               <Image
@@ -89,7 +89,7 @@ const Footer: FC = () => {
               />
             </button>
           </Link>
-          <div className={`h-full ml-8 ${isMobile ? 'mt-4 w-[80vw]' : 'w-[30vw]'}`}>
+          <div className={`${isMobile ? 'p-[10vw] mx-[10vw] left-0 bg-gray-400 rounded-2xl absolute  mt-4 w-[80vw]' : 'ml-8 h-full w-[30vw]'}`}>
             <span className="text-xs text-gray-500 font-bold">
               Conforme la ley N* 00000 y Resolución de consejo Directivo N* 00000-0000-CD/OSIPTEL
               desde el 03 de marzo 2022 las operadoras deberán garantizar el 52% de velocidad

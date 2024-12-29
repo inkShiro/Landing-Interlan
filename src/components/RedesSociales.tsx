@@ -15,32 +15,32 @@ const RedesSociales: FC = () => {
 
   return (
     <section className="bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
-      <span className="text-center text-black text-3xl font-bold pb-4">REDES SOCIALES</span>
-      <div className={`flex  ${isMobile ? 'gap-4 scale-[1.3]' : 'gap-2'
+      <span className="text-center text-black text-3xl font-bold pb-4 scale-90">REDES SOCIALES</span>
+      <div className={`flex ${isMobile ? 'gap-4 scale-90' : 'gap-2'
             } py-2 justify-center`}>
         <Link href={links.facebook}>
-          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-            <FaFacebookF className="text-blue-600" />
+          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+            <FaFacebookF className="text-[#13092E]" />
           </button>
         </Link>
         <Link href={links.youtube}>
-          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-            <FaYoutube className="text-red-600" />
+          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+            <FaYoutube className="text-[#13092E]" />
           </button>
         </Link>
         <Link href={links.instagram}>
-          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-blue-200 hover:bg-pink-500 hover:text-white transition-all">
-            <FaInstagram className="text-white" />
+          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#0099FE] hover:bg-pink-500 hover:text-white transition-all">
+            <FaInstagram className="text-[#E9FBFB]" />
           </button>
         </Link>
         <Link href={links.linkedin}>
-          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-            <FaLinkedinIn className="text-blue-600" />
+          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+            <FaLinkedinIn className="text-[#13092E]" />
           </button>
         </Link>
         <Link href={links.twitter}>
-          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-white hover:bg-blue-500 hover:text-white transition-all">
-            <FaTwitter className="text-blue-600" />
+          <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-500 hover:text-white transition-all">
+            <FaTwitter className="text-[#13092E]" />
           </button>
         </Link>
       </div>
@@ -49,7 +49,7 @@ const RedesSociales: FC = () => {
           isMobile ? 'grid-cols-2' : 'grid-cols-5'
         } gap-4 w-full max-w-4xl mx-auto my-10`}
       >
-        {[...Array(5)].slice(0, isMobile ? 4 : 5).map((_, index) => (
+        {[...Array(5)].slice(0, isMobile ? 2 : 5).map((_, index) => (
           <div
             key={index}
             className="w-full h-48 border border-gray-300 bg-slate-200"
