@@ -15,7 +15,7 @@ const Advantages = () => {
   }, []);
 
   return (
-    <section className={`${isMobile ? "h-[1200px]" : "h-[840px]"} bg-white w-[100%]`}>
+    <section className={`${isMobile ? "h-[1100px]" : "h-[840px]"} bg-white w-[100%]`}>
       <div className="bg-gradient-to-b from-[#F3F4F6] to-[#FFFFFF] w-full h-10"></div>
       <div className="max-w-7xl mx-auto text-center bg-white">
         <div className="text-center mt-16">
@@ -36,7 +36,7 @@ const Advantages = () => {
             />
           </div>
           <h2
-            className="font-bold text-black text-5xl mb-4 text-center"
+            className="font-bold text-black text-4xl mb-4 text-center"
             style={{
               width: isMobile ? '80vw' : '60vw',
               margin: '0 auto',
@@ -73,7 +73,7 @@ const Advantages = () => {
               </div>
             </div>
           ) : (
-            <div className="flex items-center justify-center h-screen scale-[0.70] ">
+            <div className="flex items-center justify-center h-screen scale-[0.70] translate-y-[-100px]">
               <div className="grid grid-rows-6 gap-4 md:hidden">
                 <div className="flex items-center justify-start p-4 w-[480px] h-[100px] rounded-lg bg-gray-200">
                   <span className="text-2xl text-blue-800 font-extrabold w-[100px]">01 /</span>

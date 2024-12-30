@@ -113,19 +113,19 @@ const Testimonios: FC = () => {
               <div className="flex mb-4">
                 {Array.from({ length: 5 }, (_, index) => (
                   <svg
-                    key={index}
-                    className={`w-5 h-5 ${index < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 15.27l-3.763 2.293 1.455-4.961-3.867-3.021 4.923-.03L10 0l1.455 4.548 4.923.03-3.867 3.021 1.455 4.961L10 15.27z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                  key={index}
+                  className={`w-5 h-5 ${index < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`}
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 15.27l-3.76 2.09 1.01-4.37-3.44-3.07 4.42-.38L10 4.5l1.77 4.05 4.42.38-3.44 3.07 1.01 4.37L10 15.27z"
+                    clipRule="evenodd"
+                  />
+                </svg>                
                 ))}
               </div>
               <p className="text-gray-700 italic">&quot;{testimonial.text}&quot;</p>

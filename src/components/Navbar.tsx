@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-[#150140] p-4 py-8 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-8 md:px-8 scale-90">
+        <div className="max-w-7xl mx-auto flex justify-between items-center px-0 md:px-8 scale-90">
           <div className="flex mr-4 items-center">
             <button>
               <Link href={links.home} className="block">
@@ -25,7 +25,7 @@ const Navbar = () => {
                   alt="Segunda imagen de Hero Banner"
                   width={0}
                   height={0}
-                  sizes="(max-width: 768px) 30vw, (max-width: 1200px) 24vw, 12vw"
+                  sizes="(max-width: 768px) 26vw, (max-width: 1200px) 12vw, 12vw"
                   style={{
                     objectFit: 'cover',
                     width: 'auto',

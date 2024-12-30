@@ -101,12 +101,11 @@ const HeroBanner = () => {
   return (
     <section
       id="hero-banner"
-      className={`relative overflow-hidden ${isMobile ? "h-[600px]" : "h-[800px]"}`}
-      style={{ backgroundColor: "#EFF6FF" }}
+      className={`relative overflow-hidden ${isMobile ? "h-[600px] bg-[#150140]" : "h-[800px]"}`}
     >
       <div
         id="banner-container"
-        className="p-8 absolute inset-0 flex justify-between items-center"
+        className={`p-8 absolute inset-0 flex justify-between items-center bg-[#150140]`}
         style={{
           backgroundImage: "url(/Assets/036.webp)",
           backgroundSize: "cover",
@@ -313,7 +312,7 @@ const HeroBanner = () => {
           <FaChevronRight className="w-6 h-6" />
         </button>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center items-center space-x-2">
+      <div className="absolute bottom-4 left-0 right-0 flex justify-center items-center space-x-2">
         {[1, 2, 3].map((id) => (
           <div
             key={id}
