@@ -34,10 +34,10 @@ const Footer: FC = () => {
 
   return (
     <footer className="bg-[rgb(21,1,64)] text-white overflow-hidden">
-      <div className="bg-[#F2F0F0] p-4 justify-center py-8">
-        <div className={`w-[80vw] flex ${isMobile ? ' mx-4 flex-row items-center' : ' mx-auto flex-row flex-nowrap items-center'}`}>
+      <div className={`${isMobile ? "bg-[#FFFFFF] h-[250px]" : " p-4 bg-[#F2F0F0]"} justify-center py-8 `}>
+        <div className={` flex ${isMobile ? 'left-0 flex-row items-center mx-[5vw] absolute bg-[#F2F0F0] w-[88vw] h-[120px] rounded-2xl justify-evenly' : 'w-[80vw] mx-auto flex-row flex-nowrap items-center'}`}>
           <Link href={links.MTC}>
-            <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
+            <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : ''}`}>
               <Image
                 src="/Assets/025.webp"
                 alt="Segunda imagen de Hero Banner"
@@ -46,14 +46,18 @@ const Footer: FC = () => {
                 sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 50vw"
                 style={{
                   objectFit: "cover",
-                  width: "12vw",
+                  width: isMobile ? "6vw" : "12vw",
                   height: "auto",
                 }}
                 className={`w-auto h-auto rounded-md transition-all${isMobile ? '' : ''}`}
               />
             </button>
-            <span className="text-9xl text-gray-500 px-4">/</span>
           </Link>
+          <span
+            className={` text-gray-500 px-4 ${isMobile ? 'text-6xl' : 'text-9xl'}`}
+          >
+            /
+          </span>
           <Link href={links.osiptel}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
               <Image
@@ -64,14 +68,18 @@ const Footer: FC = () => {
                 sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 50vw"
                 style={{
                   objectFit: "cover",
-                  width: "12vw",
+                  width: isMobile ? "6vw" : "12vw",
                   height: "auto",
                 }}
                 className="w-auto h-auto rounded-md transition-all"
               />
             </button>
           </Link>
-          <span className="text-9xl text-gray-500 px-4">/</span>
+          <span
+            className={` text-gray-500 px-4 ${isMobile ? 'text-6xl' : 'text-9xl'}`}
+          >
+            /
+          </span>
           <Link href={links.pronatel}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : 'mb-2 hover:scale-105'}`}>
               <Image
@@ -82,14 +90,15 @@ const Footer: FC = () => {
                 sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 50vw"
                 style={{
                   objectFit: "cover",
-                  width: "12vw",
+                  width: isMobile ? "6vw" : "12vw",
                   height: "auto",
                 }}
                 className="w-auto h-auto rounded-md transition-all"
               />
             </button>
           </Link>
-          <div className={`${isMobile ? 'p-[10vw] mx-[10vw] left-0 bg-gray-400 rounded-2xl absolute  mt-4 w-[80vw]' : 'ml-8 h-full w-[30vw]'}`}>
+
+          <div className={`${isMobile ? 'p-[10vw] mx-[5vw] left-0 bg-[#d2d2d2] translate-y-[160px] translate-x-[-20px] rounded-2xl absolute  mt-4 w-[88vw]' : 'ml-8 h-full w-[30vw]'}`}>
             <span className="text-xs text-gray-500 font-bold">
               Conforme la ley N* 00000 y Resolución de consejo Directivo N* 00000-0000-CD/OSIPTEL
               desde el 03 de marzo 2022 las operadoras deberán garantizar el 52% de velocidad
@@ -100,7 +109,7 @@ const Footer: FC = () => {
         </div>
       </div>
 
-      <div className="w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12">
+      <div className={`w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12 ${isMobile ? 'mt-[100px]' :'' } `}>
         <div className={`flex flex-col items-center p-12 ${isMobile ? '' : ' border-r-2'} border-white h-full w-full content-center`}>
           <Link href={links.home}>
             <button className="mb-2 hover:scale-105 transition-transform">
