@@ -78,7 +78,7 @@ const Testimonios: FC = () => {
 
   return (
     <section className="bg-gray-50 py-12 px-4">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="lg:translate-x-[-6rem] max-w-7xl mx-auto text-center">
         <div className="flex justify-center items-center space-x-4">
           <div>
             <button
