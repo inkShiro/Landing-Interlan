@@ -107,13 +107,13 @@ const BannerCableGO = () => {
         </Link>
         <div
           className={`absolute  ${isMobile
-            ? 'top-[4%] left-[2%] h-[60vh] w-[80vw] flex flex-col scale-[75%]'
+            ? 'top-[0%] left-[2%] h-[60vh] w-[80vw] flex flex-col scale-[75%]'
             : 'top-[-38%] left-[2vw] h-[40vh] w-[40vw] translate-y-1/2 '
             } transform m-2 flex flex-col justify-center`}
         >
           <div
             className={`${isMobile
-              ? 'bottom-[-10%] left-[0%] h-[60vh] w-[80vw] flex flex-col'
+              ? 'bottom-[-10%] left-[0%] h-[50vh] w-[80vw] flex flex-col'
               : 'bottom-[0%] left-[0vw] h-[40vh] w-[40vw] -translate-y-1/2'
               } transform  m-2 flex flex-col justify-center`}
             style={{

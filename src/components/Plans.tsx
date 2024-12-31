@@ -136,7 +136,10 @@ const Plans = () => {
             ))}
           </div>
         )}
-        <div className="mt-8 text-xs text-gray-600 mx-auto text-center sm:text-left" style={{ width: '60vw' }}>
+        <div
+          className={`mt-8 text-xs text-gray-600 mx-auto text-center sm:text-left ${isMobile ? 'bg-[#e7dddd] p-4 rounded-md w-[90vw]' : ''
+            }`}
+        >
           <p>
             Cobertura en los distritos de La cobertura, distritos de Huánuco, Amarilis y Pillco Marca. Sujeto a evaluación crediticia y factibilidades técnicas. 70% de velocidad garantizada medido mediante
             cableado CAT6 desde el puerto ethernet. Tarjeta de red de equipos deben soportar la velocidad contratada. Interlan ofrece una red de transmisión totalmente de fibra óptica desde nuestro centro
