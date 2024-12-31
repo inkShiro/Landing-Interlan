@@ -45,7 +45,7 @@ const Plans = () => {
 
   return (
     <section id='Plans' className="py-16 bg-gray-100 overflow-hidden">
-      <div className="lg:translate-x-[-6rem] max-w-7xl mx-auto px-4">
+      <div className="3xl:translate-x-[-6rem] max-w-7xl mx-auto px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 mx-auto pr-6" style={{ width: '65vw' }}>
           <h2 className="text-2xl font-bold text-black text-center sm:text-left mb-4 sm:mb-0">
             NUESTROS PLANES DE INTERNET 100% FIBRA ÓPTICA

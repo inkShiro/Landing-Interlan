@@ -21,7 +21,7 @@ const BannerCableGO = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className={`lg:translate-x-[-6rem] relative ${isMobile
+    <section className={`3xl:translate-x-[-6rem] relative ${isMobile
       ? ' h-[120vh]'
       : 'h-[60vh]'
       } bg-white text-black py-12 px-4  w-full"`}
@@ -106,7 +106,7 @@ const BannerCableGO = () => {
           </button>
         </Link>
         <div
-          className={`absolute lg:translate-y-[4rem] lg:scale-x[1.2]  ${isMobile
+          className={`absolute 3xl:translate-y-[4rem] lg:scale-x[1.2]  ${isMobile
             ? 'top-[0%] left-[2%] h-[60vh] w-[80vw] flex flex-col scale-[75%]'
             : 'top-[-38%] left-[2vw] h-[40vh] w-[40vw] translate-y-1/2 '
             } transform m-2 flex flex-col justify-center`}
