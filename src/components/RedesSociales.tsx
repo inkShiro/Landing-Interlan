@@ -14,7 +14,7 @@ const RedesSociales: FC = () => {
   }, []);
 
   return (
-    <section className="3xl:translate-x-[-6rem] bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
+    <section className=" bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
       <span className="text-center text-black text-3xl font-bold pb-4 scale-90">REDES SOCIALES</span>
       <div className={`flex ${isMobile ? 'gap-4 scale-90' : 'gap-2'
             } py-2 justify-center`}>

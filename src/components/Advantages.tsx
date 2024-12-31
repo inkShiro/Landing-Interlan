@@ -15,7 +15,7 @@ const Advantages = () => {
   }, []);
 
   return (
-    <section className={`${isMobile ? "h-[1100px]" : "h-[840px]"} 3xl:translate-x-[-6rem] lg:h-[1100px] bg-white w-[100%]`}>
+    <section className={`${isMobile ? "h-[1100px]" : "h-[840px]"} lg:h-[1100px] bg-white w-[100%]`}>
       <div className="bg-gradient-to-b from-[#F3F4F6] to-[#FFFFFF] w-full h-10"></div>
       <div className="max-w-7xl mx-auto text-center bg-white">
         <div className="text-center mt-16">

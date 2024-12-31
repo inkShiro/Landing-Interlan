@@ -21,7 +21,7 @@ const BannerCableGO = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className={`3xl:translate-x-[-6rem] relative ${isMobile
+    <section className={` relative ${isMobile
       ? ' h-[120vh]'
       : 'h-[60vh]'
       } bg-white text-black py-12 px-4  w-full"`}

@@ -44,7 +44,7 @@ const TargetAudience = () => {
 
   return (
     <section className="py-16 bg-blue-50">
-      <div className="3xl:translate-x-[-6rem] max-w-7xl mx-auto text-center relative px-12">
+      <div className=" max-w-7xl mx-auto text-center relative px-12">
         <button
           onClick={handlePrevious}
           className={`${isMobile ? "left-[6%]" : "left-[10%]"} absolute top-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full`}
