@@ -109,7 +109,7 @@ const Footer: FC = () => {
         </div>
       </div>
 
-      <div className={`lg:translate-x-[-6rem] w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12 ${isMobile ? 'mt-[100px]' :'' } `}>
+      <div className={`3xl:translate-x-[-6rem] w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12 ${isMobile ? 'mt-[100px]' :'' } `}>
         <div className={`flex flex-col items-center p-12 ${isMobile ? '' : ' border-r-2'} border-white h-full w-full content-center`}>
           <Link href={links.home}>
             <button className="mb-2 hover:scale-105 transition-transform">
@@ -275,7 +275,7 @@ const Footer: FC = () => {
           )}
         </div>
       </div>
-      <div className="lg:translate-x-[-6rem] bg-[#1A1A1A] text-center text-xs text-white h-[4vh] content-center w-full">
+      <div className="3xl:translate-x-[-6rem] bg-[#1A1A1A] text-center text-xs text-white h-[4vh] content-center w-full">
         <span className="font-bold">© 2024 INTERLAN </span>
         <span> / Todos los Derechos Reservados / Diseñado por Stdio X</span>
       </div>
