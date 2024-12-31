@@ -105,7 +105,7 @@ const HeroBanner = () => {
     >
       <div
         id="banner-container"
-        className={`p-8 absolute inset-0 flex justify-between items-center bg-[#150140]`}
+        className={`lg:translate-x-[-6rem] p-8 absolute inset-0 flex justify-between items-center bg-[#150140]`}
         style={{
           backgroundImage: "url(/Assets/036.webp)",
           backgroundSize: "cover",
@@ -118,7 +118,7 @@ const HeroBanner = () => {
       >
         <button
           onClick={handleDecrement}
-          className="z-10 text-white p-4 bg-black rounded-full hover:bg-gray-800 transition duration-200"
+          className="lg:translate-x-[6rem] z-10 text-white p-4 bg-black rounded-full hover:bg-gray-800 transition duration-200"
         >
           <FaChevronLeft className="w-6 h-6" />
         </button>
@@ -307,7 +307,7 @@ const HeroBanner = () => {
         )}
         <button
           onClick={handleIncrement}
-          className="z-10 text-white p-4 bg-black rounded-full hover:bg-gray-800 transition duration-200"
+          className="lg:translate-x-[-6rem] z-10 text-white p-4 bg-black rounded-full hover:bg-gray-800 transition duration-200"
         >
           <FaChevronRight className="w-6 h-6" />
         </button>

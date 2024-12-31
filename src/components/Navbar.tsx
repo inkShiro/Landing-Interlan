@@ -15,8 +15,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-[#150140] p-4 py-8 shadow-lg">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-0 md:px-8 scale-90">
+      <nav className="bg-[#150140] p-4 py-8 shadow-lg ">
+        <div className="lg:translate-x-[-6rem] max-w-7xl mx-auto flex justify-between items-center px-0 md:px-8 scale-90">
           <div className="flex mr-4 items-center">
             <button>
               <Link href={links.home} className="block">

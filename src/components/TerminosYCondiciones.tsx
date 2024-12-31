@@ -14,7 +14,7 @@ const TerminosYCondiciones: FC = () => {
 
   return (
     <section
-      className={`bg-white w-full h-[24vh] overflow-hidden text-center flex ${isMobile ? 'flex-col justify-center items-center' : ' flex-row justify-center '
+      className={`lg:translate-x-[-6rem] bg-white w-full h-[24vh] overflow-hidden text-center flex ${isMobile ? 'flex-col justify-center items-center' : ' flex-row justify-center '
         }`}
     >
       <div className={`${isMobile ? 'text-center' : ''}`}>
