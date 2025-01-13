@@ -14,17 +14,17 @@ const TerminosYCondiciones: FC = () => {
 
   return (
     <section
-      className={` bg-white w-full h-[24vh] overflow-hidden text-center flex ${isMobile ? 'flex-col justify-center items-center' : ' flex-row justify-center '
+      className={`font-ginger bg-white w-full h-[24vh] overflow-hidden text-center flex ${isMobile ? 'flex-col justify-center items-center' : ' flex-row justify-center '
         }`}
     >
-      <div className={`${isMobile ? 'text-center' : ''}`}>
+      <div className={`${isMobile ? 'text-center' : 'w-[40vw] flex flex-row items-center justify-around'}`}>
         <Link href={links.Website_Terms_of_Use}>
-          <button className="bg-[#0095FF] text-white font-semibold rounded-md px-6 py-4">
+          <button className="bg-[#0095FF] text-white font-ginger rounded-md px-6 py-4">
             Ver Términos aquí
           </button>
         </Link>
         <p
-          className={`text-[#666666] font-extrabold text-lg ${isMobile ? 'mt-8 block' : 'mt-8'
+          className={`text-[#666666] font-poppins text-2xl ${isMobile ? 'mt-8 block' : 'text-left w-[22vw]'
             }`}
         >
           *VER NUESTROS TÉRMINOS Y CONDICIONES

@@ -43,7 +43,7 @@ const TargetAudience = () => {
   };
 
   return (
-    <section className="py-16 bg-blue-50">
+    <section className="font-ginger py-16 bg-[#FFFFFF]">
       <div className=" max-w-7xl mx-auto text-center relative px-12">
         <button
           onClick={handlePrevious}
@@ -51,7 +51,7 @@ const TargetAudience = () => {
         >
           <FaChevronLeft size={24} />
         </button>
-        <h2 className="text-3xl font-bold mb-8 text-black">DIRIGIDO PARA</h2>
+        <h2 className="text-3xl font-ginger mb-8 text-black">DIRIGIDO PARA</h2>
         <button
           onClick={handleNext}
           className={`${isMobile ? "right-[6%]" : "right-[10%]"} absolute top-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full`}
@@ -73,7 +73,7 @@ const TargetAudience = () => {
                 className="rounded-lg"
               />
               <div className="absolute bottom-4 w-full text-center">
-                <h3 className="text-2xl font-semibold text-white">{cards[currentIndex].name}</h3>
+                <h3 className="text-2xl font-ginger text-white">{cards[currentIndex].name}</h3>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ const TargetAudience = () => {
                   className="rounded-lg"
                 />
                 <div className="absolute bottom-4 w-full text-center">
-                  <h3 className="text-2xl font-semibold text-white">{card.name}</h3>
+                  <h3 className="text-2xl font-ginger text-white">{card.name}</h3>
                 </div>
               </div>
             ))}

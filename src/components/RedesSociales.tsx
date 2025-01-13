@@ -14,8 +14,8 @@ const RedesSociales: FC = () => {
   }, []);
 
   return (
-    <section className=" bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
-      <span className="text-center text-black text-3xl font-bold pb-4 scale-90">REDES SOCIALES</span>
+    <section className="font-ginger bg-white py-12 px-4 flex justify-center flex-col overflow-hidden">
+      <span className="text-center text-black text-3xl font-ginger pb-4 scale-90">REDES SOCIALES</span>
       <div className={`flex ${isMobile ? 'gap-4 scale-90' : 'gap-2'
             } py-2 justify-center`}>
         <Link href={links.facebook}>
@@ -56,7 +56,7 @@ const RedesSociales: FC = () => {
           ></div>
         ))}
       </div>
-      <div className="text-gray-500 text-lg font-semibold text-center">
+      <div className="text-gray-500 text-lg font-ginger text-center">
         <span>Visita nuestras redes y conócenos más y no te pierdas de las promociones</span>
       </div>
     </section>
