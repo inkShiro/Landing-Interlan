@@ -34,24 +34,27 @@ const Advantages = () => {
               className="w-auto h-auto"
             />
           </div>
-          <h2
-            className="font-ginger text-black text-4xl mb-4 text-center"
-            style={{
-              width: isMobile ? '80vw' : '60vw',
-              margin: '0 auto',
-            }}
-          >
-            VENTAJAS CONECTARSE A INTERLAN
-          </h2>
-          <p
-            className="font-ginger text-xs text-gray-600 mb-8 pb-10 pt-4 text-center"
-            style={{
-              width: isMobile ? '80vw' : '30vw',
-              margin: '0 auto',
-            }}
-          >
-            Primeros con fibra óptica a las casas y negocios de familias peruanas
-          </p>
+          <div className="relative z-10">
+            <h2
+              className="font-ginger text-black text-4xl mb-4 text-center"
+              style={{
+                width: isMobile ? '80vw' : '60vw',
+                margin: '0 auto',
+              }}
+            >
+              VENTAJAS CONECTARSE A INTERLAN
+            </h2>
+            <p
+              className="font-ginger text-xs text-gray-600 mb-8 pb-10 pt-4 text-center"
+              style={{
+                width: isMobile ? '80vw' : '30vw',
+                margin: '0 auto',
+              }}
+            >
+              Primeros con fibra óptica a las casas y negocios de familias peruanas
+            </p>
+          </div>
+
           {!isMobile ? (
             <div className="justify-items-center pb-4">
               <div className="relative flex justify-center translate-x-6">
