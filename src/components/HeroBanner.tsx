@@ -101,11 +101,11 @@ const HeroBanner = () => {
   return (
     <section
       id="hero-banner"
-      className={`relative overflow-hidden ${isMobile ? "h-[600px] bg-[#150140]" : "h-[800px]"}`}
+      className={` relative overflow-hidden ${isMobile ? "h-[600px] bg-[#150140]" : "h-[800px] bg-[#FFFFFF]"}`}
     >
       <div
         id="banner-container"
-        className={` p-8 absolute inset-0 flex justify-between items-center bg-[#150140]`}
+        className={`font-ginger p-8 absolute inset-0 flex justify-between items-center bg-[#FFFFFF]`}
         style={{
           backgroundImage: "url(/Assets/036.webp)",
           backgroundSize: "cover",

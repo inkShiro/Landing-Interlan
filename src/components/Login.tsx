@@ -102,17 +102,17 @@ const Login: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative h-[100vh] w-full bg-[#EEEEEE] overflow-hidden">
+    <div className=" font-ginger relative h-[100vh] w-full bg-[#EEEEEE] overflow-hidden">
       <div
         className={`absolute z-10 bg-[#EEEEEE] px-8 py-6 rounded-lg form-container h-auto ${isMobile ? "w-full h-[60%] max-w-none top-1/2" : "w-[90%] max-w-[400px] top-2/3"
           } left-1/2 transform -translate-x-1/2 -translate-y-1/2`}
       >
         <form>
-          <h2 className="mb-4 text-3xl font-bold text-[#0095FF] text-left">
+          <h2 className="mb-4 text-3xl font-ginger text-[#0095FF] text-left">
             BIENVENIDO A INTERLAN
           </h2>
           <div className="flex items-center mb-6 text-sm text-gray-700">
-            <span className="text-6xl mx-6 text-gray-500 font-extrabold">/</span>
+            <span className="text-6xl mx-6 text-gray-500 font-ginger">/</span>
             <p className="text-xs text-[#635B8A] mr-6">
               Primeros con fibra óptica a las casas y negocios de familias peruanas
             </p>

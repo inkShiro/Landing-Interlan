@@ -77,11 +77,11 @@ const Banner = () => {
     <section
       id="banner"
       className="relative h-screen"
-      style={{ backgroundColor: "#EFF6FF" }}
+      style={{ backgroundColor: "#FFFFFF" }}
     >
       <div
         id="banner-container"
-        className="absolute inset-0 overflow-hidden"
+        className="font-gingerabsolute inset-0 overflow-hidden"
         style={{
           maskImage: "url(/Assets/mask02.png)",
           WebkitMaskImage: "url(/Assets/mask02.png)",
@@ -112,7 +112,7 @@ const Banner = () => {
       </div>
       <div
         style={{
-          backgroundColor: "#EFF6FF",
+          backgroundColor: "#FFFFFF",
           width: "100%",
           height: "100%",
         }}

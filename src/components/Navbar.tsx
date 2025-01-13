@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-[#150140] p-4 py-8 shadow-lg ">
-        <div className=" max-w-7xl mx-auto flex justify-between items-center px-0 md:px-8 scale-90">
+        <div className="font-ginger max-w-7xl mx-auto flex justify-between items-center px-0 md:px-8 scale-90">
           <div className="flex mr-4 items-center">
             <button>
               <Link href={links.home} className="block">
@@ -77,7 +77,7 @@ const Navbar = () => {
               </Link>
               <button
                 onClick={toggleLogin}
-                className="bg-blue-500 font-semibold text-xs text-white py-3 px-12 rounded-md hover:bg-blue-700 transition-all duration-300"
+                className="bg-blue-500 font-ginger text-xs text-white py-3 px-12 rounded-md hover:bg-blue-700 transition-all duration-300"
               >
                 MI PANEL
               </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
         </div>
         {isMenuOpen && (
           <div className="md:hidden flex flex-col bg-white p-4 mt-4 rounded-lg shadow-lg">
-            <ul className="text-gray-700 font-medium space-y-6">
+            <ul className="text-gray-700 font-ginger space-y-6">
               <li className="border-b mx-4 pb-2">
                 <Link
                   href={links.home}

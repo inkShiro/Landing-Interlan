@@ -77,7 +77,7 @@ const Testimonios: FC = () => {
   );
 
   return (
-    <section className="bg-gray-50 py-12 px-4">
+    <section className="font-ginger bg-[#FFFFFF] py-12 px-4">
       <div className=" max-w-7xl mx-auto text-center">
         <div className="flex justify-center items-center space-x-4">
           <div>
@@ -88,7 +88,7 @@ const Testimonios: FC = () => {
               <FiChevronLeft size={24} />
             </button>
           </div>
-          <span className="text-3xl font-bold text-gray-800 align-middle">TESTIMONIOS</span>
+          <span className="text-3xl font-ginger text-gray-800 align-middle">TESTIMONIOS</span>
           <div>
             <button
               onClick={nextTestimonial}
@@ -107,7 +107,7 @@ const Testimonios: FC = () => {
               key={index}
               className="bg-[#F2F0F0] shadow-lg rounded-lg p-6 w-80 flex flex-col items-center text-center"
             >
-              <h3 className="text-xl text-black font-semibold mb-2">{testimonial.name}</h3>
+              <h3 className="text-xl text-black font-ginger mb-2">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-4">{testimonial.role}</p>
               <p className="text-sm text-gray-400 mb-2">{testimonial.date}</p>
               <div className="flex mb-4">

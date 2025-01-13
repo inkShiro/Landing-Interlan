@@ -44,24 +44,24 @@ const Plans = () => {
   };
 
   return (
-    <section id='Plans' className="py-16 bg-gray-100 overflow-hidden">
-      <div className=" max-w-7xl mx-auto px-4">
+    <section id='Plans' className="py-16 bg-[#FFFFFF] overflow-hidden">
+      <div className="font-ginger max-w-7xl mx-auto px-4">
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 mx-auto pr-6" style={{ width: '65vw' }}>
-          <h2 className="text-2xl font-bold text-black text-center sm:text-left mb-4 sm:mb-0">
+          <h2 className="text-2xl font-ginger text-black text-center sm:text-left mb-4 sm:mb-0">
             NUESTROS PLANES DE INTERNET 100% FIBRA ÓPTICA
           </h2>
           <div className="flex space-x-4">
             <button
               onClick={() => setSelectedPlan('SOLO INTERNET')}
               className={`${selectedPlan === 'SOLO INTERNET' ? 'bg-gray-300 text-black border-black' : 'bg-white text-gray-500 border-gray-400'
-                } py-2 px-6 font-semibold text-2xl border-2 rounded-md transition-all`}
+                } py-2 px-6 font-ginger text-2xl border-2 rounded-md transition-all`}
             >
               SOLO INTERNET
             </button>
             <button
               onClick={() => setSelectedPlan('DUO')}
               className={`${selectedPlan === 'DUO' ? 'bg-gray-300 text-black border-black' : 'bg-white text-gray-500 border-gray-400'
-                } py-2 px-6 font-semibold text-2xl border-2 rounded-md transition-all`}
+                } py-2 px-6 font-ginger text-2xl border-2 rounded-md transition-all`}
             >
               DUO
             </button>
@@ -91,7 +91,7 @@ const Plans = () => {
             <div className="mt-4 flex justify-center mx-auto">
               <Link
                 href={getPlanLink()}
-                className="text-white py-2 px-8 rounded-md font-semibold shadow-xl hover:shadow-2xl hover:scale-105 hover:opacity-100 transition-all duration-300 ease-in-out"
+                className="text-white py-2 px-8 rounded-md font-ginger shadow-xl hover:shadow-2xl hover:scale-105 hover:opacity-100 transition-all duration-300 ease-in-out"
                 style={{ backgroundColor: buttonColors[currentIndex] }}
               >
                 QUIERO ESTE PLAN
@@ -125,7 +125,7 @@ const Plans = () => {
                   <div className="mt-4 flex justify-center mx-auto">
                     <Link
                       href={getPlanLink()}
-                      className="text-white py-2 px-8 rounded-md font-semibold shadow-xl hover:shadow-2xl hover:scale-105 hover:opacity-100 transition-all duration-300 ease-in-out"
+                      className="text-white py-2 px-8 rounded-md font-ginger shadow-xl hover:shadow-2xl hover:scale-105 hover:opacity-100 transition-all duration-300 ease-in-out"
                       style={{ backgroundColor: buttonColors[currentIndex] }}
                     >
                       QUIERO ESTE PLAN

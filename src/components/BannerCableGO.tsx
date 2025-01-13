@@ -27,7 +27,7 @@ const BannerCableGO = () => {
       } bg-white text-black py-12 px-4  w-full"`}
     >
       <div
-        className={`absolute left-1/2 top-1/2 transform ${isMobile
+        className={`font-ginger absolute left-1/2 top-1/2 transform ${isMobile
           ? '-translate-x-1/2 -translate-y-[20%] h-[500px] w-[90vw]'
           : '-translate-x-1/2 -translate-y-[33%] h-[210px] w-[60vw]'
           } bg-gradient-to-tl from-[#3972AA] to-[#121329] rounded-3xl overflow-hidden mt-18`}
@@ -143,7 +143,7 @@ const BannerCableGO = () => {
                   }`}
               >
                 {!isMobile && (
-                  <span className="text-5xl mx-4 text-white font-extrabold">/</span>
+                  <span className="text-5xl mx-4 text-white font-ginger">/</span>
                 )}
                 <span className="text-lg mx-6 text-white">Televisión por streaming</span>
               </div>
@@ -168,11 +168,11 @@ const BannerCableGO = () => {
                 className={`flex ${isMobile ? 'flex-col items-center space-y-2' : 'flex-nowrap items-center'
                   }`}
               >
-                <span className="text-sm text-white font-bold">
+                <span className="text-sm text-white font-ginger">
                   +90 Canales de televisión
                 </span>
                 {!isMobile && (
-                  <span className="text-5xl mx-4 text-white font-extrabold">/</span>
+                  <span className="text-5xl mx-4 text-white font-ginger">/</span>
                 )}
                 <span className={`flex ${isMobile ? "" : "w-10"} text-sm text-white font-semibold `}
                 >

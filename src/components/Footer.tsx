@@ -34,7 +34,7 @@ const Footer: FC = () => {
 
   return (
     <footer className="bg-[rgb(21,1,64)] text-white overflow-hidden">
-      <div className={`${isMobile ? "bg-[#FFFFFF] h-[250px]" : " p-4 bg-[#F2F0F0]"} justify-center py-8 `}>
+      <div className={`font-ginger ${isMobile ? "bg-[#FFFFFF] h-[250px]" : " p-4 bg-[#F2F0F0]"} justify-center py-8 `}>
         <div className={` flex ${isMobile ? 'left-0 flex-row items-center mx-[5vw] absolute bg-[#F2F0F0] w-[88vw] h-[120px] rounded-2xl justify-evenly' : 'w-[80vw] mx-auto flex-row flex-nowrap items-center'}`}>
           <Link href={links.MTC}>
             <button className={` transition-transform ${isMobile ? 'scale-[3] my-10 hover:scale-[3.05] ' : ''}`}>
@@ -99,7 +99,7 @@ const Footer: FC = () => {
           </Link>
 
           <div className={`${isMobile ? 'p-[10vw] mx-[5vw] left-0 bg-[#d2d2d2] translate-y-[160px] translate-x-[-20px] rounded-2xl absolute  mt-4 w-[88vw]' : 'ml-8 h-full w-[30vw]'}`}>
-            <span className="text-xs text-gray-500 font-bold">
+            <span className="text-xs text-gray-500 font-ginger">
               Conforme la ley N* 00000 y Resolución de consejo Directivo N* 00000-0000-CD/OSIPTEL
               desde el 03 de marzo 2022 las operadoras deberán garantizar el 52% de velocidad
               contratada, sin embargo, INTERLANT ofrece a todos sus clientes una velocidad mínima
@@ -109,7 +109,7 @@ const Footer: FC = () => {
         </div>
       </div>
 
-      <div className={` w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12 ${isMobile ? 'mt-[100px]' :'' } `}>
+      <div className={` w-[80vw] mx-auto grid grid-cols-1 md:grid-cols-5 place-items-center content-center py-12 ${isMobile ? 'mt-[100px]' : ''} `}>
         <div className={`flex flex-col items-center p-12 ${isMobile ? '' : ' border-r-2'} border-white h-full w-full content-center`}>
           <Link href={links.home}>
             <button className="mb-2 hover:scale-105 transition-transform">
@@ -132,28 +132,28 @@ const Footer: FC = () => {
           <div className={`flex  ${isMobile ? 'gap-4 scale-[1.5]' : 'gap-2'
             } py-2 justify-center`}>
             <Link href={links.facebook}>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-                <FaFacebookF className="text-blue-600" />
+              <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+                <FaFacebookF className="text-[#13092E]" />
               </button>
             </Link>
             <Link href={links.youtube}>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-                <FaYoutube className="text-red-600" />
+              <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+                <FaYoutube className="text-[#13092E]" />
               </button>
             </Link>
             <Link href={links.instagram}>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-blue-200 hover:bg-pink-500 hover:text-white transition-all">
-                <FaInstagram className="text-white" />
+              <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#0099FE] hover:bg-pink-500 hover:text-white transition-all">
+                <FaInstagram className="text-[#E9FBFB]" />
               </button>
             </Link>
             <Link href={links.linkedin}>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-white hover:bg-blue-600 hover:text-white transition-all">
-                <FaLinkedinIn className="text-blue-600" />
+              <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
+                <FaLinkedinIn className="text-[#13092E]" />
               </button>
             </Link>
             <Link href={links.twitter}>
-              <button className="h-8 w-8 flex items-center justify-center rounded-full bg-white hover:bg-blue-500 hover:text-white transition-all">
-                <FaTwitter className="text-blue-600" />
+              <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-500 hover:text-white transition-all">
+                <FaTwitter className="text-[#13092E]" />
               </button>
             </Link>
           </div>
@@ -181,7 +181,7 @@ const Footer: FC = () => {
             onClick={() => setShowContact(!showContact)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-ginger" : "text-lg"} text-left underline mb-4 py-4 `}>
               Contacto</h3>
           </button>
           {showContact && (
@@ -208,7 +208,7 @@ const Footer: FC = () => {
             onClick={() => setShowUserInfo(!showUserInfo)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-ginger" : "text-lg"} text-left underline mb-4 py-4 `}>
               Información de abonados y usuarios
             </h3>
           </button>
@@ -234,7 +234,7 @@ const Footer: FC = () => {
             onClick={() => setShowRights(!showRights)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-ginger" : "text-lg"} text-left underline mb-4 py-4 `}>
               Tus derechos
             </h3>
           </button>
@@ -257,7 +257,7 @@ const Footer: FC = () => {
             onClick={() => setShowUtility(!showUtility)}
             disabled={!isMobile}
           >
-            <h3 className={`${isMobile ? "text-3xl font-bold" : "text-lg"} text-left underline mb-4 py-4 `}>
+            <h3 className={`${isMobile ? "text-3xl font-ginger" : "text-lg"} text-left underline mb-4 py-4 `}>
               De utilidad
             </h3>
           </button>
@@ -276,7 +276,7 @@ const Footer: FC = () => {
         </div>
       </div>
       <div className=" bg-[#1A1A1A] text-center text-xs text-white h-[4vh] content-center w-full">
-        <span className="font-bold">© 2024 INTERLAN </span>
+        <span className="font-ginger">© 2024 INTERLAN </span>
         <span> / Todos los Derechos Reservados / Diseñado por Stdio X</span>
       </div>
     </footer>

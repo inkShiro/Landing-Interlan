@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
-    <section style={{ backgroundColor: "#EFF6FF" }}>
+    <section className="bg-blue-50 ">
       <Navbar />
       <HeroBanner />
       <TargetAudience />
