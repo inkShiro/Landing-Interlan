@@ -81,7 +81,7 @@ const Banner = () => {
     >
       <div
         id="banner-container"
-        className="font-gingerabsolute inset-0 overflow-hidden"
+        className="h-screen font-gingerabsolute inset-0 overflow-hidden"
         style={{
           maskImage: "url(/Assets/mask02.png)",
           WebkitMaskImage: "url(/Assets/mask02.png)",
@@ -91,7 +91,7 @@ const Banner = () => {
       >
         <div
           id="banner-container"
-          className="absolute inset-0 overflow-hidden"
+          className="h-screen absolute inset-0 overflow-hidden"
           style={{
             maskImage: "url(/Assets/mask01.png)",
             WebkitMaskImage: "url(/Assets/mask01.png)",
