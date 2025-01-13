@@ -129,7 +129,7 @@ const Footer: FC = () => {
             </button>
           </Link>
           <p className="text-white text-xs mb-4 text-center">Mantente siempre conectado</p>
-          <div className={`flex  ${isMobile ? 'gap-4 scale-[1.5]' : 'gap-2'
+          <div className={`flex  ${isMobile ? 'gap-4 scale-[1.5]' : 'gap-2 scale-[0.8] 1080:scale-[1.5]'
             } py-2 justify-center`}>
             <Link href={links.facebook}>
               <button className="h-10 w-10 flex items-center justify-center rounded-full bg-[#E9E7E8] hover:bg-blue-600 hover:text-white transition-all">
